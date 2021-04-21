@@ -1,6 +1,6 @@
 # U-NET-implementation-for-segmentation
-
 A simple UNET Implementation for pixel level classification of images with VGG19 Encoder.
+
 
 
 About the Dataset:
