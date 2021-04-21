@@ -21,3 +21,6 @@ All the files are read from the directory and saved as image_path, mask_path, an
 This diagram below gives us an idea of what UNET model is and how it basically works.  
 ![UNET_model](https://github.com/itspreeti25/U-NET-implementation-for-segmentation/blob/main/unetmodel.png)
 
+
+Research Paper Followed:https://arxiv.org/abs/1505.04597
+
