@@ -18,6 +18,7 @@ The main agenda is to perform the Semantic Segmentation Of MRI Scans based on tr
 All the files are read from the directory and saved as image_path, mask_path, and Patient ID into pandas dataframe for further processing. Visualisation and dropping of duplicate values is also done to avoid errors. 
 
 
+
 Why create a custom data generator and zip images and masks together in this case?
 
 For segmentation or pixel level classification where we have an image and a corresponding mask localizing the object (or in this case a tumour), we need a new function that will generate both the training image and corresponding mask that we will use to feed into the fit_generator method. Specifically, the way fit_generator works is that yields a sequence of tuples such that the first element of the tuple is the image and the second element is the expected output. By simply using the data generator on its own, the sub-directories will implicitly encode the expected label of the image. This is of course no longer the case when you're trying to do semantic segmentation.
